@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>FizzBuzz Game</title>
+
+<style type = "text/css">
+
+
+
+</style>
+</head>
+
+<!-- @ShaisthaKallil : shaistha@shaikallil.info : -->
+<!-- In this game, we will print number from 1 to 50. Replace multiples of 3 by word "Fizz" and multiples of 5 by word "Buzz".     For numbers that are multiples of 3 and 5 by word "Fizz Buzz" -->
+
+<body>
+
+	<h2> Entire Number List </h2>
+ 
+    
+    <script type = "text/javascript">
+	
+   
+		for(var num = 1; num<=50 ; num++){
+		   	
+		
+			/*document.write(num+"<br/>");*/
+			var bythree = num%3;
+			var byfive = num%5;
+			
+			if(bythree === 0 && byfive === 0){
+				document.write(" - Fizz Buzz" + "<br/>");	
+			}else if(bythree === 0){
+				document.write(" - Fizz" + "<br/>");	
+			}else if(byfive === 0){
+				document.write(" - Buzz" + "<br />");	
+			}else{
+				document.write(num + "<br/>");
+			}
+				
+		}
+	
+	</script>
+</body>
+</html>
